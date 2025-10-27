@@ -562,6 +562,10 @@ router.get('/receive', async ctx => {
   await sendfile(ctx, 'static/download.html')
 })
 
+router.get('/health', async ctx => {
+    ctx.body = 'healthy'
+})
+
 router.get('/', async ctx => {
   const agent = ctx.get('user-agent')
   console.log(ctx.ip, agent)
