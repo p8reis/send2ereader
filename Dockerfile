@@ -44,7 +44,7 @@ COPY . ./
 RUN mkdir -p uploads
 
 # Expose app port
-EXPOSE 3001
+EXPOSE 3682
 
 # Start the app
 CMD [ "npm", "start" ]
