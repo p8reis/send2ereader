@@ -9,7 +9,7 @@ services:
     # Ports means, Bind external and internal docker ports, only change the external port, not the internal port
     # Format: <External Port>:<Internal Port>
     ports:
-      - "3682:3682"
+      - "3683:3683"
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:3682/health" ]
       interval: 6000s
