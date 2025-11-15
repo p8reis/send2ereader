@@ -166,6 +166,12 @@ router.post('/generate', async ctx => {
   ctx.body = key
 })
 
+router.get('/show-agent', async ctx => {
+  const agent = ctx.get('user-agent');
+  ctx.type = 'html';
+  ctx.body = `<html><body><h2>User Agent:</h2><pre>${agent}</pre></body></html>`;
+});
+
 /*
 router.get('/download/:key', async ctx => {
   const key = ctx.cookies.get('key')
