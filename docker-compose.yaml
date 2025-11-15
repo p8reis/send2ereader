@@ -11,7 +11,7 @@ services:
     ports:
       - "3683:3683"
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:3682/health" ]
+      test: [ "CMD", "curl", "-f", "http://localhost:3683/health" ]
       interval: 6000s
       timeout: 10s
       retries: 3
